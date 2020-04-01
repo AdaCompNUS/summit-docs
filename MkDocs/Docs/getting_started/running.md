@@ -11,4 +11,4 @@ The simulator is now running as a server, waiting for client apps to connect and
 
 ## What's next?
 
-Check out the tutorials on this website on how to use the various features of SUMMIT. For example, you can start by [spawning maps](../../../tutorials/loading_and_spawning_maps) and learning how to [navigate roads and sidewalks](../../../tutorials/using_roads_and_sidewalks).
+Check out the tutorials on this website on how to use the various features of SUMMIT. For example, you can start by [spawning maps](../../tutorials/loading_and_spawning_maps) and [simulating traffic](../../tutorials/simulating_traffic). If you want to control your own agent, you can check out how to [navigate roads and sidewalks](../../tutorials/using_roads_and_sidewalks).
