@@ -1,5 +1,5 @@
 site_name: SUMMIT 
-site_url: https://adacompnus.github.io/summit
+site_url: https://adacompnus.github.io/summit-docs
 docs_dir: Docs
 nav:
   - Home: index.md
