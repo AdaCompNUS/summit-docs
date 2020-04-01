@@ -11,4 +11,4 @@ The simulator is now running as a server, waiting for client apps to connect and
 
 ## What's next?
 
-Check out the tutorials on this website on how to use the various features of SUMMIT.
+Check out the tutorials on this website on how to use the various features of SUMMIT. You can also check out our [Context-POMDP repository](https://github.com/AdaCompNUS/context-pomdp), which does online POMDP planning on an ego-vehicle in SUMMIT.
