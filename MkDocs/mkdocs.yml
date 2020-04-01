@@ -7,12 +7,12 @@ nav:
     - Introduction: getting_started/introduction.md
     - Setting up SUMMIT: getting_started/setting_up.md
     - Building SUMMIT: getting_started/building.md
+    - Running SUMMIT: getting_started/running.md
   - Tutorials:
     - Preparing maps: tutorials/preparing_maps.md
     - Loading and spawning maps: tutorials/loading_and_spawning_maps.md
     - Using roads and sidewalks: tutorials/using_roads_and_sidewalks.md
     - Simulating traffic: tutorials/simulating_traffic.md
-    - What's next?: tutorials/whats_next.md
   - References:
     - Python API reference: references/python_api.md
     - SUMMIT map library: references/summit_map_library.md

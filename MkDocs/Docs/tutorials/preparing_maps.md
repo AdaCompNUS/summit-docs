@@ -1,5 +1,5 @@
 !!! important
-    SUMMIT comes with a [set of maps ready for use](../../references/summit_map_library). This page is required only if you wish to use additional maps.
+    SUMMIT comes with a [set of maps ready for use](../../references/summit_map_library). The steps in this page have already been done for the built-in maps. This page is required only if you wish to use your own additional maps.
 
 # Map data sources
 For a given map, SUMMIT requires both a corresponding OSM file and SUMO network, which provide the respective information:
@@ -42,8 +42,8 @@ You are recommended to postprocess the SUMO network using [SUMO's NETEDIT](https
 !!! note
     For SUMMIT's built in maps, we have done some postprocessing after the conversion, so it will be different from what is produced by simply calling the script.
 
-# (Optional) Specifying simulation bounds
-For a given map, SUMMIT's traffic simulation script simulates traffic in a user defined bounds, specified in `<summit_root>/Data/<map_name>.sim_bounds`. We recommend specifying a suitable bounds if you are using a custom map, in order to use SUMMIT's built in traffic simulation script.
+# Specifying simulation bounds
+For a given map, SUMMIT's traffic simulation script simulates traffic in a user defined bounds, specified in `<summit_root>/Data/<map_name>.sim_bounds`. In order to use SUMMIT's built in traffic simulation script, a suitable bounds must be specified, so that the traffic simulation script knows where to bound the traffic.
 
 Bounds in a `.sim_bounds` file are specified with the `min_x,min_y` on the first line, and `max_x,max_y` on the second line. For example, in `<summit_root>/Data/meskel_square.sim_bounds`:
 
@@ -57,7 +57,7 @@ These are in terms of CARLA coordinates. To find a suitable bounds for your map,
   3. Convert each SUMO coordinates into CARLA coordinates by swapping the x and y values.
   4. Take the minimum and maximum of x and y among the converted CARLA coordinates.
 
-# (Optional) Caching map object meshes
+# Caching map object meshes
 Often in SUMMIT, these mesh of map objects are calculated in order to spawn them dynamically in the simulator. The meshes can be calculated and saved beforehand to speed this process up.
 
 We provide a utility script at `<summit_root>/Scripts/extract_meshes.py` that calculates the meshes of various map objects for a given map, assuming that both the OSM file and SUMO network have been prepared. The meshes are stored at `<summit_root>/Data/` with the respective names.

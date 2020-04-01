@@ -1,7 +1,7 @@
 <h1>Setting up SUMMIT</h1>
 
 ## Requirements
-The requirements from SUMMIT derive from those of CARLA. Please ensure that you have met the [requirements of CARLA](https://carla.readthedocs.io/en/latest/getting_started/quickstart/) in order to use SUMMIT. 
+The requirements from SUMMIT derive from those of CARLA. Please ensure that you have met the [requirements of CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#requirements) in order to use SUMMIT. 
 
 !!! important
     (As an exception, **SUMMIT only supports Linux**, and we do not have any foreseeable plans to extend support for Windows or macOS)
@@ -21,12 +21,4 @@ Download all parts of the latest SUMMIT package [here](https://github.com/AdaCom
 cat SUMMIT_0.9.7.tar.gz.part* > SUMMIT.tar.gz
 ```
 
-Extract the contents of the combined SUMMIT package to somewhere suitable, and you're all set.
-
-## Running SUMMIT
-Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh` to start the simulator. A window will open, containing an empty map. 
-
-!!! note
-    If you get an X Error when running the simulator, try `./CarlaUE4.sh -opengl` instead.
-
-The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To move around, use the mouse and WASD keys (while clicking). 
+Extract the contents of the combined SUMMIT package to somewhere suitable, and you're all set to [run SUMMIT](../running).

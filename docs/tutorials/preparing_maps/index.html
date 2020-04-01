@@ -69,6 +69,10 @@
                     
     <a class="" href="../../getting_started/building/">Building SUMMIT</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../../getting_started/running/">Running SUMMIT</a>
+                </li>
     </ul>
 	    </li>
           
@@ -90,10 +94,10 @@
     <li class="toctree-l3"><a href="#obtaining-sumo-networks">Obtaining SUMO networks</a></li>
     
 
-    <li class="toctree-l3"><a href="#optional-specifying-simulation-bounds">(Optional) Specifying simulation bounds</a></li>
+    <li class="toctree-l3"><a href="#specifying-simulation-bounds">Specifying simulation bounds</a></li>
     
 
-    <li class="toctree-l3"><a href="#optional-caching-map-object-meshes">(Optional) Caching map object meshes</a></li>
+    <li class="toctree-l3"><a href="#caching-map-object-meshes">Caching map object meshes</a></li>
     
 
     <li class="toctree-l3"><a href="#optional-downloading-satellite-imagery">(Optional) Downloading satellite imagery</a></li>
@@ -112,10 +116,6 @@
                 <li class="">
                     
     <a class="" href="../simulating_traffic/">Simulating traffic</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../whats_next/">What's next?</a>
                 </li>
     </ul>
 	    </li>
@@ -173,7 +173,7 @@
               
                 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>SUMMIT comes with a <a href="../../references/summit_map_library">set of maps ready for use</a>. This page is required only if you wish to use additional maps.</p>
+<p>SUMMIT comes with a <a href="../../references/summit_map_library">set of maps ready for use</a>. The steps in this page have already been done for the built-in maps. This page is required only if you wish to use your own additional maps.</p>
 </div>
 <h1 id="map-data-sources">Map data sources</h1>
 <p>For a given map, SUMMIT requires both a corresponding OSM file and SUMO network, which provide the respective information:</p>
@@ -214,8 +214,8 @@
 <p class="admonition-title">Note</p>
 <p>For SUMMIT's built in maps, we have done some postprocessing after the conversion, so it will be different from what is produced by simply calling the script.</p>
 </div>
-<h1 id="optional-specifying-simulation-bounds">(Optional) Specifying simulation bounds</h1>
-<p>For a given map, SUMMIT's traffic simulation script simulates traffic in a user defined bounds, specified in <code>&lt;summit_root&gt;/Data/&lt;map_name&gt;.sim_bounds</code>. We recommend specifying a suitable bounds if you are using a custom map, in order to use SUMMIT's built in traffic simulation script.</p>
+<h1 id="specifying-simulation-bounds">Specifying simulation bounds</h1>
+<p>For a given map, SUMMIT's traffic simulation script simulates traffic in a user defined bounds, specified in <code>&lt;summit_root&gt;/Data/&lt;map_name&gt;.sim_bounds</code>. In order to use SUMMIT's built in traffic simulation script, a suitable bounds must be specified, so that the traffic simulation script knows where to bound the traffic.</p>
 <p>Bounds in a <code>.sim_bounds</code> file are specified with the <code>min_x,min_y</code> on the first line, and <code>max_x,max_y</code> on the second line. For example, in <code>&lt;summit_root&gt;/Data/meskel_square.sim_bounds</code>:</p>
 <pre><code>350,300
 550,500
@@ -227,7 +227,7 @@
 <li>Convert each SUMO coordinates into CARLA coordinates by swapping the x and y values.</li>
 <li>Take the minimum and maximum of x and y among the converted CARLA coordinates.</li>
 </ol>
-<h1 id="optional-caching-map-object-meshes">(Optional) Caching map object meshes</h1>
+<h1 id="caching-map-object-meshes">Caching map object meshes</h1>
 <p>Often in SUMMIT, these mesh of map objects are calculated in order to spawn them dynamically in the simulator. The meshes can be calculated and saved beforehand to speed this process up.</p>
 <p>We provide a utility script at <code>&lt;summit_root&gt;/Scripts/extract_meshes.py</code> that calculates the meshes of various map objects for a given map, assuming that both the OSM file and SUMO network have been prepared. The meshes are stored at <code>&lt;summit_root&gt;/Data/</code> with the respective names.</p>
 <p>As an example, running the following:</p>
@@ -257,7 +257,7 @@
         <a href="../loading_and_spawning_maps/" class="btn btn-neutral float-right" title="Loading and spawning maps">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../getting_started/building/" class="btn btn-neutral" title="Building SUMMIT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../getting_started/running/" class="btn btn-neutral" title="Running SUMMIT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -283,7 +283,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../getting_started/building/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../getting_started/running/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../loading_and_spawning_maps/" style="color: #fcfcfc">Next &raquo;</a></span>

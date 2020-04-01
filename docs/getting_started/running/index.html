@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>What's next? - SUMMIT</title>
+  <title>Running SUMMIT - SUMMIT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "What's next?";
-    var mkdocs_page_input_path = "tutorials/whats_next.md";
-    var mkdocs_page_url = "/summit/tutorials/whats_next/";
+    var mkdocs_page_name = "Running SUMMIT";
+    var mkdocs_page_input_path = "getting_started/running.md";
+    var mkdocs_page_url = "/summit/getting_started/running/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
@@ -59,15 +59,28 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../getting_started/introduction/">Introduction</a>
+    <a class="" href="../introduction/">Introduction</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../getting_started/setting_up/">Setting up SUMMIT</a>
+    <a class="" href="../setting_up/">Setting up SUMMIT</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../getting_started/building/">Building SUMMIT</a>
+    <a class="" href="../building/">Building SUMMIT</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Running SUMMIT</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#running-summit">Running SUMMIT</a></li>
+    
+
+    <li class="toctree-l3"><a href="#whats-next">What's next?</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -78,26 +91,19 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../preparing_maps/">Preparing maps</a>
+    <a class="" href="../../tutorials/preparing_maps/">Preparing maps</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../loading_and_spawning_maps/">Loading and spawning maps</a>
+    <a class="" href="../../tutorials/loading_and_spawning_maps/">Loading and spawning maps</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../using_roads_and_sidewalks/">Using roads and sidewalks</a>
+    <a class="" href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../simulating_traffic/">Simulating traffic</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">What's next?</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="../../tutorials/simulating_traffic/">Simulating traffic</a>
                 </li>
     </ul>
 	    </li>
@@ -139,11 +145,11 @@
     
       
         
-          <li>Tutorials &raquo;</li>
+          <li>Getting started &raquo;</li>
         
       
     
-    <li>What's next?</li>
+    <li>Running SUMMIT</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -153,7 +159,19 @@
           <div role="main">
             <div class="section">
               
-                
+                <div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>You should have SUMMIT setup before running. To install SUMMIT, follow the <a href="../setting_up">setting up steps</a>.</p>
+</div>
+<h2 id="running-summit">Running SUMMIT</h2>
+<p>Open a terminal in the folder where SUMMIT was extracted, and run <code>./CarleUE4.sh</code> to start the simulator. A window will open, containing an empty map. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you get an X Error when running the simulator, try <code>./CarlaUE4.sh -opengl</code> instead.</p>
+</div>
+<p>The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To move around, use the mouse and WASD keys (while clicking). </p>
+<h2 id="whats-next">What's next?</h2>
+<p>Check out the tutorials on this website on how to use the various features of SUMMIT.</p>
               
             </div>
           </div>
@@ -161,10 +179,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../references/python_api/" class="btn btn-neutral float-right" title="Python API reference">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../tutorials/preparing_maps/" class="btn btn-neutral float-right" title="Preparing maps">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../simulating_traffic/" class="btn btn-neutral" title="Simulating traffic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../building/" class="btn btn-neutral" title="Building SUMMIT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -190,10 +208,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../simulating_traffic/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../building/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../references/python_api/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../tutorials/preparing_maps/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

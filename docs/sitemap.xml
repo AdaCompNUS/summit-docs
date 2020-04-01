@@ -21,6 +21,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://adacompnus.github.io/summit/getting_started/running/</loc>
+     <lastmod>2020-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://adacompnus.github.io/summit/tutorials/preparing_maps/</loc>
      <lastmod>2020-04-01</lastmod>
      <changefreq>daily</changefreq>
@@ -37,11 +42,6 @@
     </url>
     <url>
      <loc>https://adacompnus.github.io/summit/tutorials/simulating_traffic/</loc>
-     <lastmod>2020-04-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit/tutorials/whats_next/</loc>
      <lastmod>2020-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
