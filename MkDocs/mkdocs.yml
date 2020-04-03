@@ -26,3 +26,6 @@ markdown_extensions:
 google_analytics:
   - UA-68147157-6
   - auto
+
+repo_url: https://github.com/AdaCompNUS/summit-docs
+edit_uri: tree/master/MkDocs/Docs/
