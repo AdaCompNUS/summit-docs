@@ -1,7 +1,9 @@
+<h1>Preparing Maps</h1>
+
 !!! important
     SUMMIT comes with a [set of maps ready for use](../../references/summit_map_library). The steps in this page have already been done for the built-in maps. This page is required only if you wish to use your own additional maps.
 
-# Map data sources
+## Map data sources
 For a given map, SUMMIT requires both a corresponding OSM file and SUMO network, which provide the respective information:
 
   * OSM file: Landmark data for spawning landmark objects.
@@ -18,7 +20,7 @@ Note that sidewalk information is not required at all, since SUMMIT automaticall
     SUMMIT uses the convention of storing all map data inside the `<summit-root>/Data/` folder. All data files pertaining to the same map should be given the same name with different extensions (e.g. `meskel_square.osm`, `meskel_square.net.xml`). In addition, underscores should be in the file name to separate words in the map name.
 
 
-# Obtaining OSM files
+## Obtaining OSM files
 To obtain high-quality real-world OSM files, we recommend using [OpenStreetMap's database](https://www.openstreetmap.org/). Simply zoom into the are of interest, and export the map to `<summit_root>/Data/<map_name>.osm`, giving your map a reasonable name.
 
 You may wish to preprocess the OSM files using [JOSM](https://josm.openstreetmap.de/) to remove road information unwanted from the simulation, such as service roads and footbridges.
@@ -26,7 +28,7 @@ You may wish to preprocess the OSM files using [JOSM](https://josm.openstreetmap
 !!! note
     In SUMMIT, we do not impose any restrictions on the source of OSM files. You are free to use any OSM file, even those produced by yourself.
 
-# Obtaining SUMO networks
+## Obtaining SUMO networks
 A SUMO network can be automatically obtained from an OSM file by using SUMO's [NETCONVERT utility](https://sumo.dlr.de/docs/NETCONVERT.html). This assumes that you have already setup the SUMO tools, as recommended in the [requirements section](../getting_started/quick_start/#requirements). The SUMO network should then be stored at `<summit_root>/Data/<map_name>.net.xml`, where `<map_name>` follows from that of the OSM file.
 
 We provide an example script at `<summit_root>/Scripts/osm2sumo.sh` to convert an OSM file into a SUMO network. 
@@ -42,7 +44,7 @@ You are recommended to postprocess the SUMO network using [SUMO's NETEDIT](https
 !!! note
     For SUMMIT's built in maps, we have done some postprocessing after the conversion, so it will be different from what is produced by simply calling the script.
 
-# Specifying simulation bounds
+## Specifying simulation bounds
 For a given map, SUMMIT's traffic simulation script simulates traffic in a user defined bounds, specified in `<summit_root>/Data/<map_name>.sim_bounds`. In order to use SUMMIT's built in traffic simulation script, a suitable bounds must be specified, so that the traffic simulation script knows where to bound the traffic.
 
 Bounds in a `.sim_bounds` file are specified with the `min_x,min_y` on the first line, and `max_x,max_y` on the second line. For example, in `<summit_root>/Data/meskel_square.sim_bounds`:
@@ -57,7 +59,7 @@ These are in terms of CARLA coordinates. To find a suitable bounds for your map,
   3. Convert each SUMO coordinates into CARLA coordinates by swapping the x and y values.
   4. Take the minimum and maximum of x and y among the converted CARLA coordinates.
 
-# Caching map object meshes
+## Caching map object meshes
 Often in SUMMIT, these mesh of map objects are calculated in order to spawn them dynamically in the simulator. The meshes can be calculated and saved beforehand to speed this process up.
 
 We provide a utility script at `<summit_root>/Scripts/extract_meshes.py` that calculates the meshes of various map objects for a given map, assuming that both the OSM file and SUMO network have been prepared. The meshes are stored at `<summit_root>/Data/` with the respective names.
@@ -75,7 +77,7 @@ uses `meskel_square.osm` (OSM file) and `meskel_square.net.xml` (SUMO network) t
   * `meskel_square.sidewalk.wkt`: Sidewalk mesh.
   * `meskel_square.landmarks/*.landmark.wkt`: Landmarks' meshes.
 
-# (Optional) Downloading satellite imagery
+## (Optional) Downloading satellite imagery
 To download satellite imagery for your map, ensure that you have your map's SUMO network located at `<summit_root>/Data/<map_name>.net.xml`, so that SUMMIT can locate the geographic bounds. Then, run the following utility script:
 
 ```bash

@@ -15,10 +15,4 @@ In addition, we make use of a few additional packages, as listed below.
 
 ## Downloading SUMMIT
 
-Download all parts of the latest SUMMIT package [here](https://github.com/AdaCompNUS/summit/releases/tag/0.9.7). Then, combine the parts using 
-
-```bash
-cat SUMMIT_0.9.7.tar.gz.part* > SUMMIT.tar.gz
-```
-
-Extract the contents of the combined SUMMIT package to somewhere suitable, and you're all set to [run SUMMIT](../running).
+Download the latest SUMMIT package from the [downloads page](../../references/releases), and extract the contents somewhere of your preference.

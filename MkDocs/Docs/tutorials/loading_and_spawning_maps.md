@@ -1,9 +1,11 @@
+<h1>Loading and Spawning Maps</h1>
+
 !!! Important
     SUMMIT comes with scripts that spawn all relevant map objects covered in this tutorial. You may use it directly them `<summit_root>/PythonAPI/examples/spawn_meshes.py` and `<summit_root>/PythonAPI/examples/spawn_imagery.py`, without going through this tutorial.
    
     Note that these scripts require that you have already [cached the map object meshes](../preparing_maps/#optional-downloading-satellite-imagery) and [downloaded the satellite imagery](../preparing_maps/#optional-caching-map-object-meshes). For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.
 
-# Connecting to the simulator
+## Connecting to the simulator
 The steps to connect to the simulator [derives from CARLA](https://carla.readthedocs.io/en/latest/python_api_tutorial/#connecting-and-retrieving-the-world). A client object is created from which the world is received:
 
 ```python
@@ -11,7 +13,7 @@ client = carla.Client('localhost', 2000)
 world = client.get_world()
 ```
 
-# Roads and roadmarks
+## Roads and roadmarks
 Roads are represented using SUMO networks, which are loaded into memory via a SUMO network file:
 
 ```python
@@ -48,7 +50,7 @@ world.spawn_dynamic_mesh(road_triangles, road_material, road_segmentation)
 world.spawn_dynamic_mesh(roadmark_triangles, roadmark_material, roadmark_segmentation)
 ```
 
-# Sidewalks
+## Sidewalks
 Sidewalks are represented using a set of oriented polygons with holes using `carla.Sidewalk` objects. 
 In SUMMIT, sidewalks are automatically calculated as boundaries along road meshes:
 
@@ -69,7 +71,7 @@ world.spawn_dynamic_mesh(sidewalk_triangles, sidewalk_material, sidewalk_segment
 ```
 
 
-# Landmarks
+## Landmarks
 Landmarks can be loaded from the map's OSM file:
 
 ```python
@@ -117,7 +119,7 @@ landmark_occupancies = [
 landmark_occupancies = [l for l in landmark_occupancies if not l.is_empty]
 ```
 
-# Satellite/general imagery
+## Satellite/general imagery
 To spawn satellite imagery in SUMMIT, we provide a utility script at `<summit_root>/PythonAPI/examples/spawn_imagery.py`. It assumes that you have already [downloadeded the satellite imagery](preparing_maps/#optional-downloading-satellite-imagery). To use, run
 
 ```python
@@ -142,7 +144,7 @@ bounds_max = carla.Vector3D(100, 100, 10)
 world.spawn_dynamic_tile_mesh(bounds_min, bounds_max, data, segmentation)
 ```
 
-# Saving and loading meshes
+## Saving and loading meshes
 You may wish to save meshes onto the disk, and reload them for future use, speeding up loading times by elimiating the unnecessary recomputations:
 
 ```python

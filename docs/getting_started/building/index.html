@@ -27,6 +27,16 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68147157-6', 'auto');
+      ga('send', 'pageview');
+  </script>
+  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -81,12 +91,8 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Tutorials</span>
+    <span class="caption-text">Programming Tutorials</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../tutorials/preparing_maps/">Preparing maps</a>
-                </li>
                 <li class="">
                     
     <a class="" href="../../tutorials/loading_and_spawning_maps/">Loading and spawning maps</a>
@@ -94,6 +100,17 @@
                 <li class="">
                     
     <a class="" href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Other Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tutorials/preparing_maps/">Preparing maps</a>
                 </li>
                 <li class="">
                     
@@ -113,6 +130,10 @@
                 <li class="">
                     
     <a class="" href="../../references/summit_map_library/">SUMMIT map library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/releases/">SUMMIT releases + downloads</a>
                 </li>
     </ul>
 	    </li>
@@ -153,17 +174,17 @@
           <div role="main">
             <div class="section">
               
-                <div class="admonition important">
+                <h1>Building SUMMIT</h1>
+
+<div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Building SUMMIT is only necessary if you wish to edit SUMMIT. If you only wish to use the simulator, the <a href="../setting_up">setup steps</a> are sufficient.</p>
 </div>
-<h1>Building SUMMIT</h1>
-
 <p>The build instructions for SUMMIT are exactly the same as those in CARLA. </p>
 <p>To build SUMMIT, follow exactly the <a href="https://carla.readthedocs.io/en/latest/how_to_build_on_linux/">build instructions for CARLA</a>, with some additional steps:</p>
 <ul>
 <li>Clone and use the <a href="https://github.com/AdaCompNUS/summit">SUMMIT repository</a> instead of the CARLA repository.</li>
-<li><strong>Before building</strong>, install <a href="https://ccache.dev/">ccache</a>: <code>sudo apt install ccache</code>.</li>
+<li><strong>Before building SUMMIT</strong>, install <a href="https://ccache.dev/">ccache</a>: <code>sudo apt install ccache</code>.</li>
 <li><strong>After getting assets</strong>, copy the following SUMMIT specific assets into the assets folder, overriding any existing files:<ul>
 <li>Copy <code>&lt;summit_root&gt;/CustomAssets/EmptyMap.umap</code> to <code>&lt;summit_root&gt;/Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap.umap</code></li>
 <li>Copy <code>&lt;summit_root&gt;/CustomAssets/EmptyMap_BuiltData.umap</code> to <code>&lt;summit_root&gt;/Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap_BuiltData.umap</code></li>

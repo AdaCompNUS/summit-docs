@@ -1,3 +1,5 @@
+<h1>Python API Reference</h1>
+
 !!! important
     SUMMIT's Python API is an extension of CARLA's [Python API](https://carla.readthedocs.io/en/latest/python_api/). All classes and methods appearing in CARLA's Python API are accessible in SUMMIT. 
     

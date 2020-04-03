@@ -1,4 +1,6 @@
-# Spawning on roads
+<h1>Using Roads and Sidewalks</h1>
+
+## Spawning on roads
 On roads, route points, stored as `carla.SumoNetworkRoutePoint` objects, hold semantic information such the point's road, lane, and offset along lane. The SUMO network, stored as a `carla.SumoNetwork`, is used to traverse these route points spatially and topologically.
 
 One way to spawn points is to first lookup the route point on the road nearest to an arbitrary position.
@@ -71,7 +73,7 @@ spawn_segments = sumo_network_segments.intersection(bounds_occupancy)
         # Crop line segments.
         spawn_segments = sumo_network_segments.intersection(spawn_occupancy)
 
-# Navigation on roads
+## Navigation on roads
 On roads, the SUMO network can be used to traverse the route points spatially and topologically.
 
 The below example fetches the nearest route point given the agent's current position, and randomly selects from topologically possible next route points a set distance ahead.
@@ -100,7 +102,7 @@ position = sumo_network.get_route_point_position(next_route_point)
 
 which can then be used for required tasks, such as for feedback to some steering controller for vehicles.
 
-# Spawning on sidewalks
+## Spawning on sidewalks
 On sidewalks, things work very similar to roads. Sidewalks also have route points, stored as `carla.SidewalkRoutePoint` objects, which hold semantic information such as the point's polygon, segment, and offset along segment.  The sidewalk, stored as a `carla.Sidewalk`, is used to traverse these route points spatially and topologically.
 
 One way to spawn points is to first lookup the route point on the road nearest to an arbitrary position.
@@ -177,7 +179,7 @@ spawn_segments = sidewalk_segments.intersection(bounds_occupancy)
         # Crop line segments.
         spawn_segments = sidewalk_segments.intersection(spawn_occupancy)
 
-# Navigating sidewalks
+## Navigating sidewalks
 On sidewalks, the sidewalk can be used to traverse the route points spatially and topologically.
 
 The below example fetches the nearest route point given the agent's current position, and selects the next route point a set distance anticlockwise along the route point's polygon. 

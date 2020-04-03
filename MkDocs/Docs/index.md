@@ -4,15 +4,16 @@
 
   * [Setting up SUMMIT](getting_started/setting_up) 
   * [Running SUMMIT](getting_started/running) 
-  * [Loading and spawning maps](tutorials/loading_and_spawning_maps)
-  * [Navigating on roads and sidewalks](tutorials/using_roads_and_sidewalks)
-  * [Simulating traffic](tutorials/simulating_traffic)
 
 <h3> Building from source </h3>
 
   * [Building SUMMIT](getting_started/building)
 
+<h3> Programming Tutorials </h3>
+  * [Loading and spawning maps](tutorials/loading_and_spawning_maps)
+  * [Navigating on roads and sidewalks](tutorials/using_roads_and_sidewalks)
+
 <h3> Advanced topics </h3>
 
   * [Preparing maps](tutorials/preparing_maps)
-  * [Python API reference](references/python_api)
+  * [Simulating traffic](tutorials/simulating_traffic)

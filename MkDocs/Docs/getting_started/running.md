@@ -1,7 +1,10 @@
+<h1> Running SUMMIT </h1>
+
+## Launching simulator
+
 !!! important
     You should have SUMMIT setup before running. To install SUMMIT, follow the [setting up steps](../setting_up).
 
-## Running SUMMIT
 Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh` to start the simulator. A window will open, containing an empty map. 
 
 !!! note
@@ -9,6 +12,29 @@ Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh
 
 The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To move around, use the mouse and WASD keys (while clicking). 
 
-## What's next?
+## Running an example scenario
 
-Check out the tutorials on this website on how to use the various features of SUMMIT. For example, you can start by [spawning maps](../../tutorials/loading_and_spawning_maps) and [simulating traffic](../../tutorials/simulating_traffic). If you want to control your own agent, you can check out how to [navigate roads and sidewalks](../../tutorials/using_roads_and_sidewalks).
+Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT. 
+
+You will spawn a map of Meskel Square, one of SUMMIT's built-in maps. Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.
+
+Firstly, spawn the Meskel Square map using the built-in `spawn_meshes.py` and `spawn_imagery.py` scripts. This will spawn the meshes and imagery relevant to Meskel Square:
+```bash
+<summit_root>/PythonAPI/examples/spawn_meshes.py --dataset meskel_square
+<summit_root>/PythonAPI/examples/spawn_imagery.py --dataset meskel_square
+```
+
+Secondly, spawn a heterogeneous crowd on the map using the built-in `gamma_crowd.py` script. This will simulate a heterogeneous traffic on the spawned map:
+```bash
+<summit_root>/PythonAPI/examples/gamma_crowd.py --dataset meskel_square
+```
+
+Finally, run the built-in sample `meskel_square_ego_agent.py` script. This will spawn an agent that navigates through the crowd.
+```bash
+<summit_root>/PythonAPI/examples/meskel_square_ego_agent.py
+```
+
+## What's next?
+To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials that we have prepared (found on the navigation menu on the left).
+
+To learn how to prepare your own maps, or to read more about how to use the built-in traffic simulator, you may step through the respective tutorials (also on the navigation menu on the left).

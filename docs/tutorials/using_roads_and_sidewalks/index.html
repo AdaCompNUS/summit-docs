@@ -27,6 +27,16 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68147157-6', 'auto');
+      ga('send', 'pageview');
+  </script>
+  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -78,12 +88,8 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Tutorials</span>
+    <span class="caption-text">Programming Tutorials</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../preparing_maps/">Preparing maps</a>
-                </li>
                 <li class="">
                     
     <a class="" href="../loading_and_spawning_maps/">Loading and spawning maps</a>
@@ -107,6 +113,17 @@
 
     </ul>
                 </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Other Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../preparing_maps/">Preparing maps</a>
+                </li>
                 <li class="">
                     
     <a class="" href="../simulating_traffic/">Simulating traffic</a>
@@ -125,6 +142,10 @@
                 <li class="">
                     
     <a class="" href="../../references/summit_map_library/">SUMMIT map library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/releases/">SUMMIT releases + downloads</a>
                 </li>
     </ul>
 	    </li>
@@ -151,7 +172,7 @@
     
       
         
-          <li>Tutorials &raquo;</li>
+          <li>Programming Tutorials &raquo;</li>
         
       
     
@@ -165,7 +186,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="spawning-on-roads">Spawning on roads</h1>
+                <h1>Using Roads and Sidewalks</h1>
+
+<h2 id="spawning-on-roads">Spawning on roads</h2>
 <p>On roads, route points, stored as <code>carla.SumoNetworkRoutePoint</code> objects, hold semantic information such the point's road, lane, and offset along lane. The SUMO network, stored as a <code>carla.SumoNetwork</code>, is used to traverse these route points spatially and topologically.</p>
 <p>One way to spawn points is to first lookup the route point on the road nearest to an arbitrary position.</p>
 <pre><code class="python"># Load SUMO network.
@@ -230,7 +253,7 @@ spawn_occupancy = polygon.union(rectangle1).difference(rectangle2)
 spawn_segments = sumo_network_segments.intersection(spawn_occupancy)
 </code></pre>
 </div>
-<h1 id="navigation-on-roads">Navigation on roads</h1>
+<h2 id="navigation-on-roads">Navigation on roads</h2>
 <p>On roads, the SUMO network can be used to traverse the route points spatially and topologically.</p>
 <p>The below example fetches the nearest route point given the agent's current position, and randomly selects from topologically possible next route points a set distance ahead.</p>
 <pre><code class="python3"># Get 2D position of actor.
@@ -253,7 +276,7 @@ position = sumo_network.get_route_point_position(next_route_point)
 </code></pre>
 
 <p>which can then be used for required tasks, such as for feedback to some steering controller for vehicles.</p>
-<h1 id="spawning-on-sidewalks">Spawning on sidewalks</h1>
+<h2 id="spawning-on-sidewalks">Spawning on sidewalks</h2>
 <p>On sidewalks, things work very similar to roads. Sidewalks also have route points, stored as <code>carla.SidewalkRoutePoint</code> objects, which hold semantic information such as the point's polygon, segment, and offset along segment.  The sidewalk, stored as a <code>carla.Sidewalk</code>, is used to traverse these route points spatially and topologically.</p>
 <p>One way to spawn points is to first lookup the route point on the road nearest to an arbitrary position.</p>
 <pre><code class="python"># Load SUMO network.
@@ -322,7 +345,7 @@ spawn_occupancy = polygon.union(rectangle1).difference(rectangle2)
 spawn_segments = sidewalk_segments.intersection(spawn_occupancy)
 </code></pre>
 </div>
-<h1 id="navigating-sidewalks">Navigating sidewalks</h1>
+<h2 id="navigating-sidewalks">Navigating sidewalks</h2>
 <p>On sidewalks, the sidewalk can be used to traverse the route points spatially and topologically.</p>
 <p>The below example fetches the nearest route point given the agent's current position, and selects the next route point a set distance anticlockwise along the route point's polygon. </p>
 <div class="admonition note">
@@ -364,7 +387,7 @@ position = sidewalk.get_route_point_position(next_route_point)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../simulating_traffic/" class="btn btn-neutral float-right" title="Simulating traffic">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../preparing_maps/" class="btn btn-neutral float-right" title="Preparing maps">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../loading_and_spawning_maps/" class="btn btn-neutral" title="Loading and spawning maps"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -396,7 +419,7 @@ position = sidewalk.get_route_point_position(next_route_point)
         <span><a href="../loading_and_spawning_maps/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../simulating_traffic/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../preparing_maps/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

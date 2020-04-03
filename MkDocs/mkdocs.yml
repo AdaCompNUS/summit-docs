@@ -8,15 +8,21 @@ nav:
     - Setting up SUMMIT: getting_started/setting_up.md
     - Building SUMMIT: getting_started/building.md
     - Running SUMMIT: getting_started/running.md
-  - Tutorials:
-    - Preparing maps: tutorials/preparing_maps.md
+  - Programming Tutorials:
     - Loading and spawning maps: tutorials/loading_and_spawning_maps.md
     - Using roads and sidewalks: tutorials/using_roads_and_sidewalks.md
+  - Other Tutorials:
+    - Preparing maps: tutorials/preparing_maps.md
     - Simulating traffic: tutorials/simulating_traffic.md
   - References:
     - Python API reference: references/python_api.md
     - SUMMIT map library: references/summit_map_library.md
+    - SUMMIT releases + downloads: references/releases.md
 theme: readthedocs
 
 markdown_extensions:
   - admonition
+
+google_analytics:
+  - UA-68147157-6
+  - auto

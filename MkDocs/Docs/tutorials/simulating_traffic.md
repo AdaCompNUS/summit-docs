@@ -1,3 +1,5 @@
+<h1>Simulating Traffic</h1>
+
 SUMMIT comes with a built in script to simulate traffic on a map, located at `<summit_root>/PythonAPI/examples/gamma_crowd.py`. It makes use of the recent [GAMMA](https://arxiv.org/abs/1906.01566) prediction model to simulate heterogeneous agent behavior with sophisticated and unregulated behaviors.
 
 To use the script, ensure that you have done the following:

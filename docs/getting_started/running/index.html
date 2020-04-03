@@ -27,6 +27,16 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-68147157-6', 'auto');
+      ga('send', 'pageview');
+  </script>
+  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -74,7 +84,10 @@
     <a class="current" href="./">Running SUMMIT</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#running-summit">Running SUMMIT</a></li>
+    <li class="toctree-l3"><a href="#launching-simulator">Launching simulator</a></li>
+    
+
+    <li class="toctree-l3"><a href="#running-an-example-scenario">Running an example scenario</a></li>
     
 
     <li class="toctree-l3"><a href="#whats-next">What's next?</a></li>
@@ -87,12 +100,8 @@
           
             <li class="toctree-l1">
 		
-    <span class="caption-text">Tutorials</span>
+    <span class="caption-text">Programming Tutorials</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../tutorials/preparing_maps/">Preparing maps</a>
-                </li>
                 <li class="">
                     
     <a class="" href="../../tutorials/loading_and_spawning_maps/">Loading and spawning maps</a>
@@ -100,6 +109,17 @@
                 <li class="">
                     
     <a class="" href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Other Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../tutorials/preparing_maps/">Preparing maps</a>
                 </li>
                 <li class="">
                     
@@ -119,6 +139,10 @@
                 <li class="">
                     
     <a class="" href="../../references/summit_map_library/">SUMMIT map library</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../references/releases/">SUMMIT releases + downloads</a>
                 </li>
     </ul>
 	    </li>
@@ -159,19 +183,38 @@
           <div role="main">
             <div class="section">
               
-                <div class="admonition important">
+                <h1> Running SUMMIT </h1>
+
+<h2 id="launching-simulator">Launching simulator</h2>
+<div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>You should have SUMMIT setup before running. To install SUMMIT, follow the <a href="../setting_up">setting up steps</a>.</p>
 </div>
-<h2 id="running-summit">Running SUMMIT</h2>
 <p>Open a terminal in the folder where SUMMIT was extracted, and run <code>./CarleUE4.sh</code> to start the simulator. A window will open, containing an empty map. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you get an X Error when running the simulator, try <code>./CarlaUE4.sh -opengl</code> instead.</p>
 </div>
 <p>The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To move around, use the mouse and WASD keys (while clicking). </p>
+<h2 id="running-an-example-scenario">Running an example scenario</h2>
+<p>Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT. </p>
+<p>You will spawn a map of Meskel Square, one of SUMMIT's built-in maps. Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.</p>
+<p>Firstly, spawn the Meskel Square map using the built-in <code>spawn_meshes.py</code> and <code>spawn_imagery.py</code> scripts. This will spawn the meshes and imagery relevant to Meskel Square:</p>
+<pre><code class="bash">&lt;summit_root&gt;/PythonAPI/examples/spawn_meshes.py --dataset meskel_square
+&lt;summit_root&gt;/PythonAPI/examples/spawn_imagery.py --dataset meskel_square
+</code></pre>
+
+<p>Secondly, spawn a heterogeneous crowd on the map using the built-in <code>gamma_crowd.py</code> script. This will simulate a heterogeneous traffic on the spawned map:</p>
+<pre><code class="bash">&lt;summit_root&gt;/PythonAPI/examples/gamma_crowd.py --dataset meskel_square
+</code></pre>
+
+<p>Finally, run the built-in sample <code>meskel_square_ego_agent.py</code> script. This will spawn an agent that navigates through the crowd.</p>
+<pre><code class="bash">&lt;summit_root&gt;/PythonAPI/examples/meskel_square_ego_agent.py
+</code></pre>
+
 <h2 id="whats-next">What's next?</h2>
-<p>Check out the tutorials on this website on how to use the various features of SUMMIT. For example, you can start by <a href="../../tutorials/loading_and_spawning_maps">spawning maps</a> and <a href="../../tutorials/simulating_traffic">simulating traffic</a>. If you want to control your own agent, you can check out how to <a href="../../tutorials/using_roads_and_sidewalks">navigate roads and sidewalks</a>.</p>
+<p>To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials that we have prepared (found on the navigation menu on the left).</p>
+<p>To learn how to prepare your own maps, or to read more about how to use the built-in traffic simulator, you may step through the respective tutorials (also on the navigation menu on the left).</p>
               
             </div>
           </div>
@@ -179,7 +222,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../tutorials/preparing_maps/" class="btn btn-neutral float-right" title="Preparing maps">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../tutorials/loading_and_spawning_maps/" class="btn btn-neutral float-right" title="Loading and spawning maps">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../building/" class="btn btn-neutral" title="Building SUMMIT"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -211,7 +254,7 @@
         <span><a href="../building/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../tutorials/preparing_maps/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../tutorials/loading_and_spawning_maps/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
