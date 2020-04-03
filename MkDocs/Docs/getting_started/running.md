@@ -10,7 +10,7 @@ Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh
 !!! note
     If you get an X Error when running the simulator, try `./CarlaUE4.sh -opengl` instead.
 
-The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To move around, use the mouse and WASD keys (while clicking). 
+The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To change the camera angle, hold down the right mouse button and drag your mouse around. To change the camera position, hold down the right mouse button and use the WASD keys.
 
 ## Running an example scenario
 
