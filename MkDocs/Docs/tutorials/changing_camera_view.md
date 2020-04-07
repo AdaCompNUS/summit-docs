@@ -1,11 +1,10 @@
-<h1>Changing Camera View</h1>
+<h1>Changing the Camera View</h1>
 
 The camera view in SUMMIT can be either changed using mouse / keyboard, or through code.
 
 ## Mouse / keyboard
 
-To change the camera angle, hold down the right mouse button and drag your mouse around. 
-
+To change the camera angle, hold down the right mouse button and drag your mouse around; 
 To change the camera position, hold down the right mouse button and use the WASD keys.
 
 ## Python API
