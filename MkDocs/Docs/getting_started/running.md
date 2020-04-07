@@ -10,7 +10,7 @@ Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh
 !!! note
     If you get an X Error when running the simulator, try `./CarlaUE4.sh -opengl` instead.
 
-The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. To change the camera angle, hold down the right mouse button and drag your mouse around. To change the camera position, hold down the right mouse button and use the WASD keys.
+The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. 
 
 ## Running an example scenario
 
@@ -35,6 +35,13 @@ Finally, run the built-in sample `meskel_square_ego_vehicle.py` script. This wil
 ```
 
 ## What's next?
-To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials that we have prepared (found on the navigation menu on the left).
+To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials:
+* [Load and spawn existing maps](../../tutorials/loading_and_spawning_maps/)
+* [Using roads and sidewalks](../../tutorials/using_roads_and_sidewalks/)
+* [Changing the camera view](../../tutorials/changing_camera_view/)
 
-To learn how to prepare your own maps, or to read more about how to use the built-in traffic simulator, you may step through the respective tutorials (also on the navigation menu on the left).
+To learn how to prepare your own maps, or to read more about how to use the built-in traffic simulator, you may step through the map tutorials:
+* [Prepare new maps](../../tutorials/preparing_maps/)
+* [Simulate traffic in new maps](../../tutorials/simulating_traffic/)
+
+To use the expert planner, check out our [Context-POMDP repository](https://github.com/AdaCompNUS/context-pomdp.git).
