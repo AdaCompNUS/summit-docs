@@ -36,11 +36,13 @@ Finally, run the built-in sample `meskel_square_ego_vehicle.py` script. This wil
 
 ## What's next?
 To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials:
+
 * [Load and spawn existing maps](../../tutorials/loading_and_spawning_maps/)
 * [Using roads and sidewalks](../../tutorials/using_roads_and_sidewalks/)
 * [Changing the camera view](../../tutorials/changing_camera_view/)
 
 To learn how to prepare your own maps, or to read more about how to use the built-in traffic simulator, you may step through the map tutorials:
+
 * [Prepare new maps](../../tutorials/preparing_maps/)
 * [Simulate traffic in new maps](../../tutorials/simulating_traffic/)
 
