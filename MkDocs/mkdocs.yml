@@ -11,6 +11,7 @@ nav:
   - Programming Tutorials:
     - Loading and spawning maps: tutorials/loading_and_spawning_maps.md
     - Using roads and sidewalks: tutorials/using_roads_and_sidewalks.md
+    - Panpan: tutorials/panpan.md
   - Other Tutorials:
     - Preparing maps: tutorials/preparing_maps.md
     - Simulating traffic: tutorials/simulating_traffic.md

@@ -12,6 +12,7 @@
 <h3> Programming Tutorials </h3>
   * [Loading and spawning maps](tutorials/loading_and_spawning_maps)
   * [Navigating on roads and sidewalks](tutorials/using_roads_and_sidewalks)
+  * [Panpan](tutorials/panpan)
 
 <h3> Advanced topics </h3>
 
