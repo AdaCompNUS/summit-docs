@@ -29,9 +29,9 @@ Secondly, spawn a heterogeneous crowd on the map using the built-in `gamma_crowd
 <summit_root>/PythonAPI/examples/gamma_crowd.py --dataset meskel_square
 ```
 
-Finally, run the built-in sample `meskel_square_ego_agent.py` script. This will spawn an agent that navigates through the crowd.
+Finally, run the built-in sample `meskel_square_ego_vehicle.py` script. This will spawn an agent that navigates through the crowd.
 ```bash
-<summit_root>/PythonAPI/examples/meskel_square_ego_agent.py
+<summit_root>/PythonAPI/examples/meskel_square_ego_vehicle.py
 ```
 
 ## What's next?
