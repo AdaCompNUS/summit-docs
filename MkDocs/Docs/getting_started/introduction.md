@@ -18,3 +18,6 @@ SUMMIT adds on top of CARLA a set of capabilities to enable the simulation of so
     * `SegmentsMap`: Maipulation for collections of 2D line segments. Primarily used to sample high quality uniformly distributed spawn points on roads and sidewalks.
   * **Procedural simulation:** Spawning a scenario is entirely procedural, and no recompilation the simulator is required for simulation on a new map. Mesh information for map objects such as roads, sidewalks, landmarks, and satellite imagery are sent from the client to the simulation server, where the objects are dynamically spawned.
   * **Crowd simulator:** SUMMIT provides a client side Python script that simulates unregulated traffic in the simulation. It is capable of generating dense crowds, involving vehicles on the road and pedestrians on the sidewalk, where agents operate interactively with one another. [GAMMA](https://arxiv.org/abs/1906.01566), a state-of-the-art traffic motion prediction model, is used to produce sophisticated and realistic behaviors in the simulated crowd.
+
+# Driving expert
+We also provide a driving expert using POMDP planning (as presented in the paper) and ROS-based communication. The planner is located on [this GitHub repo](https://github.com/AdaCompNUS/context-pomdp.git). 
