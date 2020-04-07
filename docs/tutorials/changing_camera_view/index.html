@@ -7,16 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="/summit-docs/img/favicon.ico">
-  <title>SUMMIT</title>
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Changing camera view - SUMMIT</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="/summit-docs/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="/summit-docs/css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
-  <script src="/summit-docs/js/jquery-2.1.1.min.js" defer></script>
-  <script src="/summit-docs/js/modernizr-2.8.3.min.js" defer></script>
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Changing camera view";
+    var mkdocs_page_input_path = "tutorials/changing_camera_view.md";
+    var mkdocs_page_url = "/summit-docs/tutorials/changing_camera_view/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
@@ -39,9 +46,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="/summit-docs/." class="icon icon-home"> SUMMIT</a>
+        <a href="../.." class="icon icon-home"> SUMMIT</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="/summit-docs/search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -53,7 +60,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="/summit-docs/.">Home</a>
+    <a class="" href="../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -62,19 +69,19 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="/summit-docs/getting_started/introduction/">Introduction</a>
+    <a class="" href="../../getting_started/introduction/">Introduction</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/getting_started/setting_up/">Setting up SUMMIT</a>
+    <a class="" href="../../getting_started/setting_up/">Setting up SUMMIT</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/getting_started/building/">Building SUMMIT</a>
+    <a class="" href="../../getting_started/building/">Building SUMMIT</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/getting_started/running/">Running SUMMIT</a>
+    <a class="" href="../../getting_started/running/">Running SUMMIT</a>
                 </li>
     </ul>
 	    </li>
@@ -85,15 +92,27 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="/summit-docs/tutorials/loading_and_spawning_maps/">Loading and spawning maps</a>
+    <a class="" href="../loading_and_spawning_maps/">Loading and spawning maps</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
+    <a class="" href="../using_roads_and_sidewalks/">Using roads and sidewalks</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="/summit-docs/tutorials/changing_camera_view/">Changing camera view</a>
+    <a class="current" href="./">Changing camera view</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#mouse-keyboard">Mouse / keyboard</a></li>
+    
+
+    <li class="toctree-l3"><a href="#python-api">Python API</a></li>
+    
+
+    <li class="toctree-l3"><a href="#camera-actor">Camera actor</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -104,11 +123,11 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="/summit-docs/tutorials/preparing_maps/">Preparing maps</a>
+    <a class="" href="../preparing_maps/">Preparing maps</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/tutorials/simulating_traffic/">Simulating traffic</a>
+    <a class="" href="../simulating_traffic/">Simulating traffic</a>
                 </li>
     </ul>
 	    </li>
@@ -119,15 +138,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="/summit-docs/references/python_api/">Python API reference</a>
+    <a class="" href="../../references/python_api/">Python API reference</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/references/summit_map_library/">SUMMIT map library</a>
+    <a class="" href="../../references/summit_map_library/">SUMMIT map library</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="/summit-docs/references/releases/">SUMMIT releases + downloads</a>
+    <a class="" href="../../references/releases/">SUMMIT releases + downloads</a>
                 </li>
     </ul>
 	    </li>
@@ -142,7 +161,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="/summit-docs/.">SUMMIT</a>
+        <a href="../..">SUMMIT</a>
       </nav>
 
       
@@ -150,10 +169,19 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="/summit-docs/.">Docs</a> &raquo;</li>
+    <li><a href="../..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>Programming Tutorials &raquo;</li>
+        
+      
     
+    <li>Changing camera view</li>
     <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/AdaCompNUS/summit-docs/tree/master/MkDocs/Docs/tutorials/changing_camera_view.md"
+          class="icon icon-github"> Edit on GitHub</a>
       
     </li>
   </ul>
@@ -162,15 +190,35 @@
           <div role="main">
             <div class="section">
               
+                <h1>Changing Camera View</h1>
 
-  <h1 id="404-page-not-found">404</h1>
+<p>The camera view in SUMMIT can be either changed using mouse / keyboard, or through code.</p>
+<h2 id="mouse-keyboard">Mouse / keyboard</h2>
+<p>To change the camera angle, hold down the right mouse button and drag your mouse around. </p>
+<p>To change the camera position, hold down the right mouse button and use the WASD keys.</p>
+<h2 id="python-api">Python API</h2>
+<p>Alternatively, you can use the following code to change the view point in the server.</p>
+<pre><code class="python">client = carla.Client(host, port)
+client.get_world().get_spectator().set_transform(carla.Transform(                
+        carla.Location((x, y, z),
+        carla.Rotation(pitch, yaw, roll)))
+</code></pre>
 
-  <p><strong>Page not found</strong></p>
-
-
+<h2 id="camera-actor">Camera actor</h2>
+<p>If you need to frequently change the view point of SUMMIT such as tracking an vehicle, we recommend to spawn a seperate camera actor and attach it to the tracked vehicle. An example script can be found in the <a href="https://github.com/AdaCompNUS/context-pomdp/blob/master/summit_connector/src/spectator.py">expert planner repo</a>.</p>
+              
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../preparing_maps/" class="btn btn-neutral float-right" title="Preparing maps">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../using_roads_and_sidewalks/" class="btn btn-neutral" title="Using roads and sidewalks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -196,12 +244,16 @@
           <a href="https://github.com/AdaCompNUS/summit-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
+        <span><a href="../using_roads_and_sidewalks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../preparing_maps/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '/summit-docs';</script>
-    <script src="/summit-docs/js/theme.js" defer></script>
-      <script src="/summit-docs/search/main.js" defer></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>

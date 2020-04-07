@@ -78,6 +78,9 @@
     <li class="toctree-l3"><a href="#the-simulator">The simulator</a></li>
     
 
+    <li class="toctree-l3"><a href="#driving-expert">Driving expert</a></li>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -106,6 +109,10 @@
                 <li class="">
                     
     <a class="" href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../tutorials/changing_camera_view/">Changing camera view</a>
                 </li>
     </ul>
 	    </li>
@@ -202,6 +209,8 @@
 <li><strong>Procedural simulation:</strong> Spawning a scenario is entirely procedural, and no recompilation the simulator is required for simulation on a new map. Mesh information for map objects such as roads, sidewalks, landmarks, and satellite imagery are sent from the client to the simulation server, where the objects are dynamically spawned.</li>
 <li><strong>Crowd simulator:</strong> SUMMIT provides a client side Python script that simulates unregulated traffic in the simulation. It is capable of generating dense crowds, involving vehicles on the road and pedestrians on the sidewalk, where agents operate interactively with one another. <a href="https://arxiv.org/abs/1906.01566">GAMMA</a>, a state-of-the-art traffic motion prediction model, is used to produce sophisticated and realistic behaviors in the simulated crowd.</li>
 </ul>
+<h1 id="driving-expert">Driving expert</h1>
+<p>We also provide a driving expert using POMDP planning (as presented in the paper) and ROS-based communication. The planner is located on <a href="https://github.com/AdaCompNUS/context-pomdp.git">this GitHub repo</a>. </p>
               
             </div>
           </div>
