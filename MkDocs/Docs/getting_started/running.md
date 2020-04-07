@@ -16,7 +16,7 @@ The simulator is now running as a server, waiting for client apps to connect and
 
 Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT. 
 
-You will spawn a map of Meskel Square, one of SUMMIT's built-in maps. Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.
+You will spawn a map of Meskel Square, one of SUMMIT's [built-in maps](../../references/summit_map_library/). Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.
 
 Firstly, spawn the Meskel Square map using the built-in `spawn_meshes.py` and `spawn_imagery.py` scripts. This will spawn the meshes and imagery relevant to Meskel Square:
 ```bash
@@ -33,6 +33,7 @@ Finally, run the built-in sample `meskel_square_ego_vehicle.py` script. This wil
 ```bash
 <summit_root>/PythonAPI/examples/meskel_square_ego_vehicle.py
 ```
+
 
 ## What's next?
 To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials:
