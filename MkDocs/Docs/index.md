@@ -12,7 +12,7 @@
 <h3> Programming Tutorials </h3>
   * [Loading and spawning maps](tutorials/loading_and_spawning_maps)
   * [Navigating on roads and sidewalks](tutorials/using_roads_and_sidewalks)
-  * [Changing camera view](tutorials/changing_camera_view)
+  * [Configuring the simulation](tutorials/configure_the_simulation)
 
 <h3> Advanced topics </h3>
 
