@@ -12,9 +12,9 @@
 <h3> Programming Tutorials </h3>
   * [Loading and spawning maps](tutorials/loading_and_spawning_maps)
   * [Navigating on roads and sidewalks](tutorials/using_roads_and_sidewalks)
-  * [Configuring the simulation](tutorials/configure_the_simulation)
 
 <h3> Advanced topics </h3>
 
   * [Preparing maps](tutorials/preparing_maps)
   * [Simulating traffic](tutorials/simulating_traffic)
+  * [Configuring the simulation](tutorials/configure_the_simulation)
