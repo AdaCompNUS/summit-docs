@@ -8,9 +8,11 @@ In order to speed up downloads, the **lite** versions exclude a significant amou
 
 **0.9.8b** [[download lite](https://www.dropbox.com/s/9t51e3a72qarzqb/SUMMIT_0.9.8b_lite.tar.gz?dl=0)] [[download non-lite](https://www.dropbox.com/s/n5m418ryfwpoj1n/SUMMIT_0.9.8b.tar.gz?dl=0)]
 
+- Compatible with Python 2.7 and Python 3.6.
 - Minor edit to `spawn_meshes.py` to change camera position after spawning map objects.
 - Minor cleanup of redundant files.
 
 **0.9.8** [[download non-lite](https://www.dropbox.com/s/diopfv2tk85571c/SUMMIT_0.9.8.tar.gz?dl=0)]
 
+- Compatible with Python 2.7 and Python 3.6.
 - Initial public release of SUMMIT.
