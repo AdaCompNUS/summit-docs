@@ -62,10 +62,10 @@ Checks if an AABB intersects with any contained in this instance.
 
 ---
 
-## carla.Landmark<a name="carla.Landmark"></a>
+## carla.OsmLandmarks<a name="carla.OsmLandmarks"></a>
 Helper class to load landmark meshes from OSM files.
 
-- <a name="carla.Landmark.load"></a>**<font color="#7fb800">load</font>**(<font color="#00a6ed">**filename**</font>, <font color="#00a6ed">**offset**=carla.Vector2D(0, 0)</font>)  
+- <a name="carla.OsmLandmarks.load"></a>**<font color="#7fb800">load</font>**(<font color="#00a6ed">**filename**</font>, <font color="#00a6ed">**offset**=carla.Vector2D(0, 0)</font>)  
 Loads all landmark meshes from an OSM file, applying an optional offset.
     - **Parameters:**
         - `filename` (_str_) 
