@@ -6,6 +6,11 @@ In order to speed up downloads, the **lite** versions exclude a significant amou
 
 <hr>
 
+**0.9.8d** [[download lite](https://www.dropbox.com/s/pr3avosa70at4ux/SUMMIT_0.9.8d_lite.tar.gz?dl=0)] [[download non-lite](https://www.dropbox.com/s/oyr8j985z4f922o/SUMMIT_0.9.8d.tar.gz?dl=0)]
+
+- Compatible with Python 2.7 and Python 3.6.
+- Minor tweaks in traffic controller.
+
 **0.9.8c** [[download lite](https://www.dropbox.com/s/x1ygo7h2ve3tsrv/SUMMIT_0.9.8c_lite.tar.gz?dl=0)] [[download non-lite](https://www.dropbox.com/s/9wo7afg6agk7452/SUMMIT_0.9.8c.tar.gz?dl=0)]
 
 - Compatible with Python 2.7 and Python 3.6.
