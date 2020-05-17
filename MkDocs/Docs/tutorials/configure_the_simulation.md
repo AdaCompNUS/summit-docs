@@ -4,9 +4,12 @@
 
 Properties of the simulated crowd can be controled via the arguments in `<summit_root>/PythonAPI/examples/gamma_crowd.py`. Important ones include:
 
-* **--num-car**: the target number of vehicles to be maitained in the scene.
+* **--num-car**: the target number of car-like vehicles to be maitained in the scene.
 * **--num-bike**: the target number of bikes and motorcycles to be maitained in the scene.
 * **--num-pedestrian**: the target number of walkers to be maitained in the scene.
+* **--speed-car**: the preferred speed of car-like vehicles. A uniform noise between [-0.5,0.5] will be added.
+* **--speed-bike**: the preferred speed of bikes and motorcycles. A uniform noise between [-0.5,0.5] will be added.
+* **--speed-pedestrian**: the preferred speed of walkers. A uniform noise between [-0.5,0.5] will be added.
 * **--clearance-car**: clearance between other agents to be kept when spawning a vehicle.
 * **--clearance-bike**: clearance between other agents to be kept when spawning a bike or motorcycle.
 * **--clearance-pedestrian**: clearance between other agents to be kept when spawning a walker.

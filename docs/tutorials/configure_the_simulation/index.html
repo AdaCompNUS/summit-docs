@@ -202,9 +202,12 @@
 <h2 id="changing-the-crowd-setting">Changing the crowd setting</h2>
 <p>Properties of the simulated crowd can be controled via the arguments in <code>&lt;summit_root&gt;/PythonAPI/examples/gamma_crowd.py</code>. Important ones include:</p>
 <ul>
-<li><strong>--num-car</strong>: the target number of vehicles to be maitained in the scene.</li>
+<li><strong>--num-car</strong>: the target number of car-like vehicles to be maitained in the scene.</li>
 <li><strong>--num-bike</strong>: the target number of bikes and motorcycles to be maitained in the scene.</li>
 <li><strong>--num-pedestrian</strong>: the target number of walkers to be maitained in the scene.</li>
+<li><strong>--speed-car</strong>: the preferred speed of car-like vehicles. A uniform noise between [-0.5,0.5] will be added.</li>
+<li><strong>--speed-bike</strong>: the preferred speed of bikes and motorcycles. A uniform noise between [-0.5,0.5] will be added.</li>
+<li><strong>--speed-pedestrian</strong>: the preferred speed of walkers. A uniform noise between [-0.5,0.5] will be added.</li>
 <li><strong>--clearance-car</strong>: clearance between other agents to be kept when spawning a vehicle.</li>
 <li><strong>--clearance-bike</strong>: clearance between other agents to be kept when spawning a bike or motorcycle.</li>
 <li><strong>--clearance-pedestrian</strong>: clearance between other agents to be kept when spawning a walker.</li>
