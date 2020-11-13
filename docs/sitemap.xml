@@ -1,68 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
     <url>
      <loc>https://adacompnus.github.io/summit-docs/</loc>
-     <lastmod>2020-05-17</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/getting_started/introduction/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/getting_started/setting_up/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+    
+
+    
+        
     <url>
      <loc>https://adacompnus.github.io/summit-docs/getting_started/building/</loc>
-     <lastmod>2020-05-17</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/getting_started/introduction/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     <url>
      <loc>https://adacompnus.github.io/summit-docs/getting_started/running/</loc>
-     <lastmod>2020-05-17</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>https://adacompnus.github.io/summit-docs/tutorials/loading_and_spawning_maps/</loc>
-     <lastmod>2020-05-17</lastmod>
+     <loc>https://adacompnus.github.io/summit-docs/getting_started/setting_up/</loc>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/tutorials/using_roads_and_sidewalks/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/tutorials/preparing_maps/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/tutorials/simulating_traffic/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/tutorials/configure_the_simulation/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+        
+    
+
+    
+        
     <url>
      <loc>https://adacompnus.github.io/summit-docs/references/python_api/</loc>
-     <lastmod>2020-05-17</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    <url>
-     <loc>https://adacompnus.github.io/summit-docs/references/summit_map_library/</loc>
-     <lastmod>2020-05-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
+        
     <url>
      <loc>https://adacompnus.github.io/summit-docs/references/releases/</loc>
-     <lastmod>2020-05-17</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/references/summit_map_library/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/tutorials/configure_the_simulation/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/tutorials/loading_and_spawning_maps/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/tutorials/preparing_maps/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/tutorials/simulating_traffic/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://adacompnus.github.io/summit-docs/tutorials/using_roads_and_sidewalks/</loc>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>
