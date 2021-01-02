@@ -3,7 +3,7 @@
 !!! Important
     SUMMIT comes with scripts that spawn all relevant map objects covered in this tutorial. You may use it directly them `<summit_root>/PythonAPI/examples/spawn_meshes.py` and `<summit_root>/PythonAPI/examples/spawn_imagery.py`, without going through this tutorial.
 
-    Note that these scripts require that you have already [cached the map object meshes](../preparing_maps/#optional-caching-map-object-meshes) and [downloaded the satellite imagery](../preparing_maps/#optional-downloading-satellite-imagery). For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.
+    Note that these scripts require that you have already [cached the map object meshes](../preparing_maps/#caching-map-object-meshes) and [downloaded the satellite imagery](../preparing_maps/#optional-downloading-satellite-imagery). For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.
 
 ## Connecting to the simulator
 The steps to connect to the simulator [derives from CARLA](https://carla.readthedocs.io/en/latest/python_api_tutorial/#connecting-and-retrieving-the-world). A client object is created from which the world is received:
