@@ -2,8 +2,8 @@
 
 !!! Important
     SUMMIT comes with scripts that spawn all relevant map objects covered in this tutorial. You may use it directly them `<summit_root>/PythonAPI/examples/spawn_meshes.py` and `<summit_root>/PythonAPI/examples/spawn_imagery.py`, without going through this tutorial.
-   
-    Note that these scripts require that you have already [cached the map object meshes](../preparing_maps/#optional-downloading-satellite-imagery) and [downloaded the satellite imagery](../preparing_maps/#optional-caching-map-object-meshes). For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.
+
+    Note that these scripts require that you have already [cached the map object meshes](../preparing_maps/#optional-caching-map-object-meshes) and [downloaded the satellite imagery](../preparing_maps/#optional-downloading-satellite-imagery). For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.
 
 ## Connecting to the simulator
 The steps to connect to the simulator [derives from CARLA](https://carla.readthedocs.io/en/latest/python_api_tutorial/#connecting-and-retrieving-the-world). A client object is created from which the world is received:
@@ -51,7 +51,7 @@ world.spawn_dynamic_mesh(roadmark_triangles, roadmark_material, roadmark_segment
 ```
 
 ## Sidewalks
-Sidewalks are represented using a set of oriented polygons with holes using `carla.Sidewalk` objects. 
+Sidewalks are represented using a set of oriented polygons with holes using `carla.Sidewalk` objects.
 In SUMMIT, sidewalks are automatically calculated as boundaries along road meshes:
 
 ```python
@@ -96,7 +96,7 @@ for landmark_occupancy in landmark_occupancies:
 
     # Get vertically rising mesh triangles, with a height of 20.0 meters.
     wall_mesh_triangles = landmark_occupancy.get_wall_mesh_triangles(20.0)
-    
+
     # Spawn meshes dynamically in simulator.
     world.spawn_dynamic_mesh(ground_mesh_triangles, landmark_material, landmark_segmentation)
     world.spawn_dynamic_mesh(ceiling_mesh_triangles, landmark_material, landmark_segmentation)
@@ -112,7 +112,7 @@ landmark_occupancies = ... # Get landmark meshes.
 
 # Subtract road mesh and sidewalk mesh from landmark meshes.
 landmark_occupancies = [
-        l.difference(sumo_network_occupancy).difference(sidewalk_occupancy) 
+        l.difference(sumo_network_occupancy).difference(sidewalk_occupancy)
         for l in landmark_occupancies]
 
 # Filter empty landmark meshes.
