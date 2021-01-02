@@ -120,7 +120,7 @@ landmark_occupancies = [l for l in landmark_occupancies if not l.is_empty]
 ```
 
 ## Satellite/general imagery
-To spawn satellite imagery in SUMMIT, we provide a utility script at `<summit_root>/PythonAPI/examples/spawn_imagery.py`. It assumes that you have already [downloadeded the satellite imagery](preparing_maps/#optional-downloading-satellite-imagery). To use, run
+To spawn satellite imagery in SUMMIT, we provide a utility script at `<summit_root>/PythonAPI/examples/spawn_imagery.py`. It assumes that you have already [downloadeded the satellite imagery](../preparing_maps/#optional-downloading-satellite-imagery). To use, run
 
 ```python
 spawn_imagery.py --dataset <map_name>
