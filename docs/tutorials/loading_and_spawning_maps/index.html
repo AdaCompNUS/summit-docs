@@ -7,30 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  <link rel="canonical" href="https://adacompnus.github.io/summit-docs/tutorials/loading_and_spawning_maps/">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Loading and spawning maps - SUMMIT</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
     var mkdocs_page_name = "Loading and spawning maps";
     var mkdocs_page_input_path = "tutorials/loading_and_spawning_maps.md";
-    var mkdocs_page_url = "/tutorials/loading_and_spawning_maps/";
+    var mkdocs_page_url = "/summit-docs/tutorials/loading_and_spawning_maps/";
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-68147157-6', 'auto');
       ga('send', 'pageview');
@@ -44,124 +46,61 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> SUMMIT</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Getting started</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../getting_started/introduction/">Introduction</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../getting_started/setting_up/">Setting up SUMMIT</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../getting_started/building/">Building SUMMIT</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../getting_started/running/">Running SUMMIT</a>
-                </li>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting_started/introduction/">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting_started/setting_up/">Setting up SUMMIT</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting_started/building/">Building SUMMIT</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../getting_started/running/">Running SUMMIT</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Programming Tutorials</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Loading and spawning maps</a>
+    <ul class="current">
     </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Programming Tutorials</span>
-    <ul class="subnav">
-                <li class=" current">
-                    
-    <a class="current" href="./">Loading and spawning maps</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#connecting-to-the-simulator">Connecting to the simulator</a></li>
-    
-
-    <li class="toctree-l3"><a href="#roads-and-roadmarks">Roads and roadmarks</a></li>
-    
-
-    <li class="toctree-l3"><a href="#sidewalks">Sidewalks</a></li>
-    
-
-    <li class="toctree-l3"><a href="#landmarks">Landmarks</a></li>
-    
-
-    <li class="toctree-l3"><a href="#satellitegeneral-imagery">Satellite/general imagery</a></li>
-    
-
-    <li class="toctree-l3"><a href="#saving-and-loading-meshes">Saving and loading meshes</a></li>
-    
-
-    </ul>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../using_roads_and_sidewalks/">Using roads and sidewalks</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Other Tutorials</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../preparing_maps/">Preparing maps</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../simulating_traffic/">Simulating traffic</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../configure_the_simulation/">Configuring the simulation</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">References</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../references/python_api/">Python API reference</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../references/summit_map_library/">SUMMIT map library</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../references/releases/">SUMMIT releases + downloads</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../using_roads_and_sidewalks/">Using roads and sidewalks</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Other Tutorials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preparing_maps/">Preparing maps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../simulating_traffic/">Simulating traffic</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../configure_the_simulation/">Configuring the simulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/python_api/">Python API reference</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/summit_map_library/">SUMMIT map library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/releases/">SUMMIT releases + downloads</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -193,6 +132,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -203,29 +143,25 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>SUMMIT comes with scripts that spawn all relevant map objects covered in this tutorial. You may use it directly them <code>&lt;summit_root&gt;/PythonAPI/examples/spawn_meshes.py</code> and <code>&lt;summit_root&gt;/PythonAPI/examples/spawn_imagery.py</code>, without going through this tutorial.</p>
-<p>Note that these scripts require that you have already <a href="../../preparing_maps/#optional-downloading-satellite-imagery">cached the map object meshes</a> and <a href="../../preparing_maps/#optional-caching-map-object-meshes">downloaded the satellite imagery</a>. For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.</p>
+<p>Note that these scripts require that you have already <a href="../preparing_maps/#optional-downloading-satellite-imagery">cached the map object meshes</a> and <a href="../preparing_maps/#optional-caching-map-object-meshes">downloaded the satellite imagery</a>. For built-in SUMMIT maps, these have already been done for you, so you may go ahead with using the scripts directly, skipping this tutorial.</p>
 </div>
 <h2 id="connecting-to-the-simulator">Connecting to the simulator</h2>
 <p>The steps to connect to the simulator <a href="https://carla.readthedocs.io/en/latest/python_api_tutorial/#connecting-and-retrieving-the-world">derives from CARLA</a>. A client object is created from which the world is received:</p>
-<pre><code class="python">client = carla.Client('localhost', 2000)
+<pre><code class="language-python">client = carla.Client('localhost', 2000)
 world = client.get_world()
 </code></pre>
-
 <h2 id="roads-and-roadmarks">Roads and roadmarks</h2>
 <p>Roads are represented using SUMO networks, which are loaded into memory via a SUMO network file:</p>
-<pre><code class="python">sumo_network = carla.SumoNetwork.load(PATH_TO_SUMO_NETWORK_FILE)
+<pre><code class="language-python">sumo_network = carla.SumoNetwork.load(PATH_TO_SUMO_NETWORK_FILE)
 </code></pre>
-
 <p>The occupancy map (i.e. mesh) for the road can be produced by calling:</p>
-<pre><code class="python">sumo_network_occupancy = sumo_network.create_occupancy_map()
+<pre><code class="language-python">sumo_network_occupancy = sumo_network.create_occupancy_map()
 </code></pre>
-
 <p>If you required roadmarks (e.g. lane dividers), SUMMIT provides a fully automated way to generate the roadmarks' mesh:</p>
-<pre><code class="python">roadmark_occupancy = sumo_network.create_roadmark_occupancy_map()
+<pre><code class="language-python">roadmark_occupancy = sumo_network.create_roadmark_occupancy_map()
 </code></pre>
-
 <p>The road and roadmarks' meshes are then sent to the simulator and spawned dynamically:</p>
-<pre><code class="python"># Get mesh triangles, and defines material and segmentation tag for road.
+<pre><code class="language-python"># Get mesh triangles, and defines material and segmentation tag for road.
 # Roadmarks' mesh is subtracted from the road's mesh to prevent flickering due to overlaps.
 road_triangles = sumo_network_occupancy.difference(roadmark_occupancy).get_mesh_triangles()
 road_material = '/Game/Carla/Static/GenericMaterials/Masters/LowComplexity/M_Road1'
@@ -240,11 +176,10 @@ roadmark_segmentation = 6 # Road line (defined by CARLA).
 world.spawn_dynamic_mesh(road_triangles, road_material, road_segmentation)
 world.spawn_dynamic_mesh(roadmark_triangles, roadmark_material, roadmark_segmentation)
 </code></pre>
-
 <h2 id="sidewalks">Sidewalks</h2>
 <p>Sidewalks are represented using a set of oriented polygons with holes using <code>carla.Sidewalk</code> objects. 
 In SUMMIT, sidewalks are automatically calculated as boundaries along road meshes:</p>
-<pre><code class="python"># Create sidewalk 1.5 meters from road's mesh.
+<pre><code class="language-python"># Create sidewalk 1.5 meters from road's mesh.
 sidewalk = sumo_network_occupancy.create_sidewalk(1.5)
 
 # Create sidewalk's mesh for a sidewalk width of 3.0 meters.
@@ -258,18 +193,16 @@ sidewalk_segmentation = 8 # Sidewalk (defined by CARLA).
 # Spawn sidewalk dynamically in simulator.
 world.spawn_dynamic_mesh(sidewalk_triangles, sidewalk_material, sidewalk_segmentation)
 </code></pre>
-
 <h2 id="landmarks">Landmarks</h2>
 <p>Landmarks can be loaded from the map's OSM file:</p>
-<pre><code class="python">landmark_occupancies = carla.Landmark.load(PATH_TO_OSM_FILE, sumo_network.offset)
+<pre><code class="language-python">landmark_occupancies = carla.Landmark.load(PATH_TO_OSM_FILE, sumo_network.offset)
 </code></pre>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <code>sumo_network.offset</code> argument applies an offset to each landmark equal to the offset applied to the SUMO network. This is required because the SUMO network itself is offset (by <code>sumo_network.offset</code>) such that its bounds are aligned to the origin in the simulator. On the other hand, the landmarks maintain their global geographic position. Without applying the correct offset, the landmarks may end up at positions far away from the SUMO network.</p>
 </div>
 <p>For each landmark, we can retrieve the ground, ceiling, and wall meshes to be spawned in the simulator:</p>
-<pre><code class="python">landmark_material = '/Game/Carla/Static/Buildings/aa_wall_mat'
+<pre><code class="language-python">landmark_material = '/Game/Carla/Static/Buildings/aa_wall_mat'
 landmark_segmentation = 1 # Building (defined by CARLA)
 
 for landmark_occupancy in landmark_occupancies:
@@ -287,9 +220,8 @@ for landmark_occupancy in landmark_occupancies:
     world.spawn_dynamic_mesh(ceiling_mesh_triangles, landmark_material, landmark_segmentation)
     world.spawn_dynamic_mesh(wall_mesh_triangles, landmark_material, landmark_segmentation)
 </code></pre>
-
 <p>The landmarks may sometime overlap with the roads and sidewalks. You may wish to do some preprocessing to remove these overlaps:</p>
-<pre><code class="python">sumo_network_occupancy = ... # Get road mesh.
+<pre><code class="language-python">sumo_network_occupancy = ... # Get road mesh.
 sidewalk_occupancy = ... # Get sidewalk mesh.
 landmark_occupancies = ... # Get landmark meshes.
 
@@ -301,18 +233,16 @@ landmark_occupancies = [
 # Filter empty landmark meshes.
 landmark_occupancies = [l for l in landmark_occupancies if not l.is_empty]
 </code></pre>
-
 <h2 id="satellitegeneral-imagery">Satellite/general imagery</h2>
-<p>To spawn satellite imagery in SUMMIT, we provide a utility script at <code>&lt;summit_root&gt;/PythonAPI/examples/spawn_imagery.py</code>. It assumes that you have already <a href="../preparing_maps/#optional-downloading-satellite-imagery">downloadeded the satellite imagery</a>. To use, run</p>
-<pre><code class="python">spawn_imagery.py --dataset &lt;map_name&gt;
+<p>To spawn satellite imagery in SUMMIT, we provide a utility script at <code>&lt;summit_root&gt;/PythonAPI/examples/spawn_imagery.py</code>. It assumes that you have already <a href="preparing_maps/#optional-downloading-satellite-imagery">downloadeded the satellite imagery</a>. To use, run</p>
+<pre><code class="language-python">spawn_imagery.py --dataset &lt;map_name&gt;
 </code></pre>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Spawning satellite imagery involves a tedious amount of work (such as looking up the map tile indices from geographical coordinates), and we highly recommend using the provided script which already deals with these efforts.</p>
 </div>
 <p>The dynamic image tiles that SUMMIT expose to spawn satellite imagery can also be used to spawn any JPEG image in general. The below example spawns a an arbitrary image on a square region that is slanted along the z axis.</p>
-<pre><code class="python">with open(JPEG_PATH, 'rb') as f:
+<pre><code class="language-python">with open(JPEG_PATH, 'rb') as f:
     # NOTE: Python 2 reads the file as a string instead of as an
     # array of bytes. ord(b) checks for this and converts accordingly.
     data = [ord(b) if isinstance(b, str) else b for b in f.read()]
@@ -323,10 +253,9 @@ bounds_max = carla.Vector3D(100, 100, 10)
 
 world.spawn_dynamic_tile_mesh(bounds_min, bounds_max, data, segmentation)
 </code></pre>
-
 <h2 id="saving-and-loading-meshes">Saving and loading meshes</h2>
 <p>You may wish to save meshes onto the disk, and reload them for future use, speeding up loading times by elimiating the unnecessary recomputations:</p>
-<pre><code class="python"># Saves mesh to the disk at SAVE_PATH.
+<pre><code class="language-python"># Saves mesh to the disk at SAVE_PATH.
 sumo_network_occupancy.save(SAVE_PATH)
 
 # Reload mesh from the disk.
@@ -335,7 +264,6 @@ sumo_network_occupancy = carla.OccupancyMap.load(SAVE_PATH)
 # Spawn dynamically in simulator.
 world.spawn_dynamic_mesh(sumo_network_occupancy.get_mesh_triangles(), road_material, road_segmentation)
 </code></pre>
-
 <p>This example works for any <code>carla.OccupancyMap</code> instance, not just for roads.</p>
               
             </div>
@@ -359,20 +287,20 @@ world.spawn_dynamic_mesh(sumo_network_occupancy.get_mesh_triangles(), road_mater
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
     </section>
-    
+
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/AdaCompNUS/summit-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/AdaCompNUS/summit-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../../getting_started/running/" style="color: #fcfcfc;">&laquo; Previous</a></span>
@@ -382,7 +310,14 @@ world.spawn_dynamic_mesh(sumo_network_occupancy.get_mesh_triangles(), road_mater
       
     </span>
 </div>
-    <script src="../../js/theme.js"></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>

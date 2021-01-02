@@ -7,30 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
+  <link rel="canonical" href="https://adacompnus.github.io/summit-docs/getting_started/running/">
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Running SUMMIT - SUMMIT</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
     var mkdocs_page_name = "Running SUMMIT";
     var mkdocs_page_input_path = "getting_started/running.md";
-    var mkdocs_page_url = "/getting_started/running/";
+    var mkdocs_page_url = "/summit-docs/getting_started/running/";
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-68147157-6', 'auto');
       ga('send', 'pageview');
@@ -44,115 +46,61 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> SUMMIT</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Getting started</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../introduction/">Introduction</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../setting_up/">Setting up SUMMIT</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../building/">Building SUMMIT</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="./">Running SUMMIT</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#launching-simulator">Launching simulator</a></li>
-    
-
-    <li class="toctree-l3"><a href="#running-an-example-scenario">Running an example scenario</a></li>
-    
-
-    <li class="toctree-l3"><a href="#whats-next">What's next?</a></li>
-    
-
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Getting started</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../setting_up/">Setting up SUMMIT</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../building/">Building SUMMIT</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Running SUMMIT</a>
+    <ul class="current">
     </ul>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Programming Tutorials</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../tutorials/loading_and_spawning_maps/">Loading and spawning maps</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">Other Tutorials</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../tutorials/preparing_maps/">Preparing maps</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../tutorials/simulating_traffic/">Simulating traffic</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../tutorials/configure_the_simulation/">Configuring the simulation</a>
-                </li>
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <span class="caption-text">References</span>
-    <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../../references/python_api/">Python API reference</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../references/summit_map_library/">SUMMIT map library</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../references/releases/">SUMMIT releases + downloads</a>
-                </li>
-    </ul>
-	    </li>
-          
-        </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Programming Tutorials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/loading_and_spawning_maps/">Loading and spawning maps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Other Tutorials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/preparing_maps/">Preparing maps</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/simulating_traffic/">Simulating traffic</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tutorials/configure_the_simulation/">Configuring the simulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">References</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/python_api/">Python API reference</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/summit_map_library/">SUMMIT map library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../references/releases/">SUMMIT releases + downloads</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -184,6 +132,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -194,7 +143,7 @@
 <h2 id="launching-simulator">Launching simulator</h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>You should have SUMMIT setup before running. To install SUMMIT, follow the <a href="../../setting_up">setting up steps</a>.</p>
+<p>You should have SUMMIT setup before running. To install SUMMIT, follow the <a href="../setting_up">setting up steps</a>.</p>
 </div>
 <p>Open a terminal in the folder where SUMMIT was extracted, and run <code>./CarleUE4.sh</code> to start the simulator. A window will open, containing an empty map. </p>
 <div class="admonition note">
@@ -204,31 +153,28 @@
 <p>The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. </p>
 <h2 id="running-an-example-scenario">Running an example scenario</h2>
 <p>Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT. </p>
-<p>You will spawn a map of Meskel Square, one of SUMMIT's <a href="../../../references/summit_map_library/">built-in maps</a>. Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.</p>
+<p>You will spawn a map of Meskel Square, one of SUMMIT's <a href="../../references/summit_map_library/">built-in maps</a>. Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.</p>
 <p>Firstly, spawn the Meskel Square map using the built-in <code>spawn_meshes.py</code> and <code>spawn_imagery.py</code> scripts. This will spawn the meshes and imagery relevant to Meskel Square:</p>
-<pre><code class="bash">&lt;summit_root&gt;/PythonAPI/examples/spawn_meshes.py --dataset meskel_square
+<pre><code class="language-bash">&lt;summit_root&gt;/PythonAPI/examples/spawn_meshes.py --dataset meskel_square
 &lt;summit_root&gt;/PythonAPI/examples/spawn_imagery.py --dataset meskel_square
 </code></pre>
-
 <p>Secondly, spawn a heterogeneous crowd on the map using the built-in <code>gamma_crowd.py</code> script. This will simulate a heterogeneous traffic on the spawned map:</p>
-<pre><code class="bash">&lt;summit_root&gt;/PythonAPI/examples/gamma_crowd.py --dataset meskel_square
+<pre><code class="language-bash">&lt;summit_root&gt;/PythonAPI/examples/gamma_crowd.py --dataset meskel_square
 </code></pre>
-
 <p>Finally, run the built-in sample <code>meskel_square_ego_vehicle.py</code> script. This will spawn an agent that navigates through the crowd.</p>
-<pre><code class="bash">&lt;summit_root&gt;/PythonAPI/examples/meskel_square_ego_vehicle.py
+<pre><code class="language-bash">&lt;summit_root&gt;/PythonAPI/examples/meskel_square_ego_vehicle.py
 </code></pre>
-
 <h2 id="whats-next">What's next?</h2>
 <p>To get started writing your own scripts to interact with SUMMIT, you may step through the programming tutorials:</p>
 <ul>
-<li><a href="../../../tutorials/loading_and_spawning_maps/">Load and spawn existing maps</a></li>
-<li><a href="../../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a></li>
+<li><a href="../../tutorials/loading_and_spawning_maps/">Load and spawn existing maps</a></li>
+<li><a href="../../tutorials/using_roads_and_sidewalks/">Using roads and sidewalks</a></li>
 </ul>
 <p>To learn how to prepare your own maps, or to read more about how to use the built-in traffic simulator, you may step through the map tutorials:</p>
 <ul>
-<li><a href="../../../tutorials/preparing_maps/">Prepare new maps</a></li>
-<li><a href="../../../tutorials/simulating_traffic/">Simulate traffic in new maps</a></li>
-<li><a href="../../../tutorials/configure_the_simulation/">Configuring the simulation</a></li>
+<li><a href="../../tutorials/preparing_maps/">Prepare new maps</a></li>
+<li><a href="../../tutorials/simulating_traffic/">Simulate traffic in new maps</a></li>
+<li><a href="../../tutorials/configure_the_simulation/">Configuring the simulation</a></li>
 </ul>
 <p>To use the expert planner, check out our <a href="https://github.com/AdaCompNUS/context-pomdp.git">Context-POMDP repository</a>.</p>
               
@@ -253,20 +199,20 @@
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
     </section>
-    
+
   </div>
 
-  <div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
-          <a href="https://github.com/AdaCompNUS/summit-docs" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/AdaCompNUS/summit-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
         <span><a href="../building/" style="color: #fcfcfc;">&laquo; Previous</a></span>
@@ -276,7 +222,14 @@
       
     </span>
 </div>
-    <script src="../../js/theme.js"></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
 </body>
 </html>
