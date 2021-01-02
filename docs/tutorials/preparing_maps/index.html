@@ -168,7 +168,7 @@
 <p>In SUMMIT, we do not impose any restrictions on the source of OSM files. You are free to use any OSM file, even those produced by yourself.</p>
 </div>
 <h2 id="obtaining-sumo-networks">Obtaining SUMO networks</h2>
-<p>A SUMO network can be automatically obtained from an OSM file by using SUMO's <a href="https://sumo.dlr.de/docs/NETCONVERT.html">NETCONVERT utility</a>. This assumes that you have already setup the SUMO tools, as recommended in the <a href="../getting_started/setting_up/#requirements">requirements section</a>. The SUMO network should then be stored at <code>&lt;summit_root&gt;/Data/&lt;map_name&gt;.net.xml</code>, where <code>&lt;map_name&gt;</code> follows from that of the OSM file.</p>
+<p>A SUMO network can be automatically obtained from an OSM file by using SUMO's <a href="https://sumo.dlr.de/docs/NETCONVERT.html">NETCONVERT utility</a>. This assumes that you have already setup the SUMO tools, as recommended in the <a href="../../getting_started/setting_up/#requirements">requirements section</a>. The SUMO network should then be stored at <code>&lt;summit_root&gt;/Data/&lt;map_name&gt;.net.xml</code>, where <code>&lt;map_name&gt;</code> follows from that of the OSM file.</p>
 <p>We provide an example script at <code>&lt;summit_root&gt;/Scripts/osm2sumo.sh</code> to convert an OSM file into a SUMO network.</p>
 <p>You are recommended to postprocess the SUMO network using <a href="https://sumo.dlr.de/docs/NETEDIT.html">SUMO's NETEDIT</a> after the conversion. The conversion process is not perfect, and we highly recommend postprocessing the SUMO network to eliminate any ambiguities.</p>
 <div class="admonition important">

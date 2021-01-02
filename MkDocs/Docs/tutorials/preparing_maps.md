@@ -29,7 +29,7 @@ You may wish to preprocess the OSM files using [JOSM](https://josm.openstreetmap
     In SUMMIT, we do not impose any restrictions on the source of OSM files. You are free to use any OSM file, even those produced by yourself.
 
 ## Obtaining SUMO networks
-A SUMO network can be automatically obtained from an OSM file by using SUMO's [NETCONVERT utility](https://sumo.dlr.de/docs/NETCONVERT.html). This assumes that you have already setup the SUMO tools, as recommended in the [requirements section](../getting_started/setting_up/#requirements). The SUMO network should then be stored at `<summit_root>/Data/<map_name>.net.xml`, where `<map_name>` follows from that of the OSM file.
+A SUMO network can be automatically obtained from an OSM file by using SUMO's [NETCONVERT utility](https://sumo.dlr.de/docs/NETCONVERT.html). This assumes that you have already setup the SUMO tools, as recommended in the [requirements section](../../getting_started/setting_up/#requirements). The SUMO network should then be stored at `<summit_root>/Data/<map_name>.net.xml`, where `<map_name>` follows from that of the OSM file.
 
 We provide an example script at `<summit_root>/Scripts/osm2sumo.sh` to convert an OSM file into a SUMO network.
 
