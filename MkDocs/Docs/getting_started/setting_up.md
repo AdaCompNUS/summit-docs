@@ -1,7 +1,7 @@
 <h1>Setting up SUMMIT</h1>
 
 ## Requirements
-The requirements from SUMMIT derive from those of CARLA. Please ensure that you have met the [pre-installation requirements of CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#requirements) in order to use SUMMIT. 
+The requirements from SUMMIT derive from those of CARLA. Please ensure that you have met the [pre-installation requirements of CARLA](https://carla.readthedocs.io/en/latest/start_quickstart/#requirements) in order to use SUMMIT. Installation of CARLA is not required. 
 
 !!! important
     (As an exception, **SUMMIT only supports Linux**, and we do not have any foreseeable plans to extend support for Windows or macOS)
