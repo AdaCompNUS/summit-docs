@@ -9,7 +9,7 @@ In order to speed up downloads, the **lite** versions exclude a significant amou
 **0.9.8f** [[download lite](https://www.dropbox.com/s/vfxoexx0dtr8drj/SUMMIT_0.9.8f_lite.tar.gz?dl=0)] [[download non-lite](https://www.dropbox.com/s/g1tqy7oke4hhsin/SUMMIT_0.9.8f.tar.gz?dl=0)]
 
 - Compatible with Ubuntu 20.04 and Python 3.8.
-- Update to build and run on Ubuntu 20.04.
+- Updated to run on Ubuntu 20.04.
 
 **0.9.8e** [[download lite](https://www.dropbox.com/s/zl6vj7flo1wzfe6/SUMMIT_0.9.8e_lite.tar.gz?dl=0)] [[download non-lite](https://www.dropbox.com/s/p2pa1g9f8kjhuh8/SUMMIT_0.9.8e.tar.gz?dl=0)]
 

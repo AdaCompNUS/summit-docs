@@ -1,6 +1,7 @@
 site_name: SUMMIT
 site_url: https://adacompnus.github.io/summit-docs
 docs_dir: Docs
+site_dir: ../docs
 nav:
   - Home: index.md
   - Getting started:

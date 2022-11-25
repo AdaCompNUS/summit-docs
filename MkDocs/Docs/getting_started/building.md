@@ -32,7 +32,7 @@ cd ~/summit
 # This specific asset is known to be broken in CARLA's assets repository, so we remove it.
 Unreal/CarlaUE4/Content/Carla/Static/Vegetation/Veg_Tree_DatePalm_v001.uasset
 
-# Path default map and add assets for dynamic meshes.
+# Patch default map and add assets for dynamic meshes.
 cp CustomAssets/EmptyMap.umap Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap.umap
 cp CustomAssets/EmptyMap_BuiltData.umap Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap_BuiltData.umap
 cp CustomAssets/M_Tile.uasset Unreal/CarlaUE4/Content/Carla/Static/GenericMaterials/Ground/M_Tile.uasset

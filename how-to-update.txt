@@ -1,5 +1,5 @@
 1) Install mkdocs
 2) go into the MkDocs folder of summitt-repo
 3) run `mkdocs build` (you can use `mkdocs serve` to test locally first)
-4) After building, a `site` folder will appear. Replace the `docs` folder in the root directory off summit-docs repo with that.
+4) this will override the contents of the `docs` folder in the root directory.
 5) Commit and push
