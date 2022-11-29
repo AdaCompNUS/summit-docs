@@ -126,7 +126,7 @@
 <h4>1. Setup dependencies</h4>
 
 <pre><code class="language-bash">sudo apt-add-repository &quot;deb http://apt.llvm.org/focal/ llvm-toolchain-focal main&quot;
-sudo apt install build-essential clang-10 lld-10 g++-7 cmake ninja-build libvulkan1 python3-dev python3-pip python-is-python3 libpng-dev libtiff5-dev libjpeg-dev tzdata sed curl unzip autoconf libtool rsync libxml2-dev git libboost1.71-dev-all ccache
+sudo apt install build-essential clang-10 lld-10 g++-7 cmake ninja-build libvulkan1 python3-dev python3-pip python-is-python3 libpng-dev libtiff5-dev libjpeg-dev tzdata sed curl unzip autoconf libtool rsync libxml2-dev git libboost1.71-all-dev ccache
 sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/lib/llvm-10/bin/clang++ 180
 sudo update-alternatives --install /usr/bin/clang clang /usr/lib/llvm-10/bin/clang 180
 pip3 install --user setuptools
@@ -145,11 +145,11 @@ cd ~/summit
 ./Update.sh
 
 # This specific asset is known to be broken in CARLA's assets repository, so we remove it.
-Unreal/CarlaUE4/Content/Carla/Static/Vegetation/Veg_Tree_DatePalm_v001.uasset
+rm Unreal/CarlaUE4/Content/Carla/Static/Vegetation/Veg_Tree_DatePalm_v001.uasset
 
 # Patch default map and add assets for dynamic meshes.
 cp CustomAssets/EmptyMap.umap Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap.umap
-cp CustomAssets/EmptyMap_BuiltData.umap Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap_BuiltData.umap
+cp CustomAssets/EmptyMap_BuiltData.umap Unreal/CarlaUE4/Content/Carla/Maps/TestMaps/EmptyMap_BuiltData.uasset
 cp CustomAssets/M_Tile.uasset Unreal/CarlaUE4/Content/Carla/Static/GenericMaterials/Ground/M_Tile.uasset
 
 # Build what you need.
