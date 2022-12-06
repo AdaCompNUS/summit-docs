@@ -5,16 +5,19 @@
 !!! important
     You should have SUMMIT setup before running. To install SUMMIT, follow the [setting up steps](../setting_up).
 
-Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh` to start the simulator. A window will open, containing an empty map. 
+Open a terminal in the folder where SUMMIT was extracted, and run `./CarleUE4.sh` to start the simulator. A window will open, containing an empty map.
 
 !!! note
     If you get an X Error when running the simulator, try `./CarlaUE4.sh -opengl` instead.
 
-The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it. 
+The simulator is now running as a server, waiting for client apps to connect and to interact (e.g. spawning map objects dynamically, simulating a crowd, etc.) with it.
 
 ## Running an example scenario
 
-Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT. 
+!!! note
+    If you get `AttributeError`s or other unexpected errors when running the scripts in this section, you may need to add the `*.egg` files under `<summit_root>/PythonAPI/dist/` to your `PYTHON_PATH`.
+
+Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT.
 
 You will spawn a map of Meskel Square, one of SUMMIT's [built-in maps](../../references/summit_map_library/). Next, you will spawn a heterogeneous crowd on the map. Finally, you will run a sample agent, which attempts to navigate through the crowd.
 

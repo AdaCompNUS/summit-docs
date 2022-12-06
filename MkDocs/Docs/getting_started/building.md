@@ -12,6 +12,7 @@ sudo apt install build-essential clang-10 lld-10 g++-7 cmake ninja-build libvulk
 sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/lib/llvm-10/bin/clang++ 180
 sudo update-alternatives --install /usr/bin/clang clang /usr/lib/llvm-10/bin/clang 180
 pip3 install --user setuptools
+pip3 install numpy --upgrade
 ```
 
 Please ensure that the above steps successfully installs <b>Clang 10.0</b>, <b>Boost 1.71</b>, and <b>Python 3.8</b> on your system. These specific versions are necessary for compilation to work properly. If compilation does not work, ensure that no other versions of these programs/libraries exist on your system.
@@ -22,6 +23,8 @@ You need to [link your Github account with Unreal](https://www.epicgames.com/hel
 git clone --depth 1 -b 4.26 https://github.com/CarlaUnreal/UnrealEngine.git ~/UnrealEngine_4.26
 cd ~/UnrealEngine_4.26
 ./Setup.sh && ./GenerateProjectFiles.sh && make
+echo "export UE4_ROOT=~/UnrealEngine_4.26" >> ~/.bashrc
+source ~/.bashrc
 ```
 <h4>3. Setup and compile SUMMIT</h4>
 ```bash
