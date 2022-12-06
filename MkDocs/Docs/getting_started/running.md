@@ -15,7 +15,7 @@ The simulator is now running as a server, waiting for client apps to connect and
 ## Running an example scenario
 
 !!! note
-    If you get `AttributeError`s or other unexpected errors when running the scripts in this section, you may need to add the `*.egg` files under `<summit_root>/PythonAPI/dist/` to your `PYTHON_PATH`.
+    If you get `AttributeError`s or other unexpected errors when running the scripts in this section, you may need to add the `*.egg` files under `<summit_root>/PythonAPI/dist/` to your `PYTHONPATH`.
 
 Here, we provide a walkthrough of how to use SUMMIT to run a simple scenario, to showcase the various features of SUMMIT.
 
